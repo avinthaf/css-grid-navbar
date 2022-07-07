@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    background-color: #363062;
+    padding: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+}
+
+
+nav li {
+    margin-bottom: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav .logo {
+    border-bottom: 1px solid #ffffff;
+
+    padding-bottom: 0.5rem;
+}
+
+@media (min-width: 650px) {
+    nav ul {
+        grid-template-columns: 3fr repeat(3, 1fr);
+    }
+
+    nav li {
+        margin-bottom: 0;
+    }
+
+    nav .logo {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}
